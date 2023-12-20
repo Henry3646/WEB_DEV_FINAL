@@ -39,15 +39,30 @@
 </template>
 
 <script>
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+console.log(dir, loc)
 export default {
   data() {
     return {
       teamMembers: [
         {
           id: 1,
-          name: "John Doe",
-          bio: "Short bio about John Doe.",
-          photo: "/assets/john_doe.jpg", // Replace with the actual path to the photo
+          name: "Henry Arlt",
+          bio: "Henry loves his cat milkshake and his girlfriend Amairani",
+          photo: "", // Replace with the actual path to the photo
+        },
+        {
+          id: 2,
+          name: "Stephen Robert",
+          bio: "",
+          photo: "", // Replace with the actual path to the photo
+        },
+        {
+          id: 3,
+          name: "Noah Kruse",
+          bio: "",
+          photo: "", // Replace with the actual path to the photo
         },
         // Add more team members as needed
       ],

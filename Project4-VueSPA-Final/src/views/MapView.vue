@@ -96,7 +96,7 @@ export default {
     async fetchNeighborhoodData() {
       try {
         // Replace with your actual API endpoint or logic to get neighborhood data
-        const response = await fetch("https://example.com/api/neighborhoods");
+        const response = await fetch("http://localhost:8000/neighborhoods");
         const neighborhoodData = await response.json();
 
         // Assuming the API response provides an array of neighborhoods with coordinates and crime count
